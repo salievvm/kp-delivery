@@ -1,0 +1,28 @@
+.typography-h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.typography-h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.typography-label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #9F9F9F;
+}
+
+.text-center {
+  text-align: center;
+}

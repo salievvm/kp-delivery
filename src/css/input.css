@@ -1,0 +1,120 @@
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.form-group {
+  display: grid;
+  flex-direction: column;
+  grid-gap: 12px;
+}
+
+textarea.form-control {
+  min-height: 120px;
+}
+
+textarea:focus, textarea:focus-visible,
+select:focus, select:focus-visible,
+input:focus, input:focus-visible {
+  outline: 0 !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  background: #f5f5f5 !important;
+}
+
+textarea~label::after,
+textarea:focus~label::after,
+select~label::after,
+select:focus~label::after,
+input~label::after,
+input:focus~label::after {
+  background: transparent !important;
+}
+
+.input-text {
+  background: #f5f5f5;
+  border: 0;
+  /* color: #9f9f9f; */
+  font-size: 14px;
+  line-height: 20px;
+  outline: 0;
+  padding: 10px 16px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.input-radio {
+  background: #f5f5f5;
+  border: 0;
+  /* color: #9f9f9f; */
+  font-size: 14px;
+  line-height: 20px;
+  outline: 0;
+  padding: 18px 16px;
+  width: 100%;
+  border-radius: 16px;
+  position: relative;
+  padding-left: 24px;
+}
+
+/* Hide the default radio input */
+input[type="radio"] {
+  opacity: 0;
+}
+
+/* Style the custom checkmark */
+.checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #DE210B;
+  position: absolute;
+  top: calc(56px / 2 - 10px);
+  left: 16px;
+}
+
+/* Style the custom checkmark when the radio input is checked */
+input[type="radio"]:checked + .checkmark::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #DE210B;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+}
+
+.form-select, .form-control {
+  background: #f5f5f5;
+  border: 0;
+  /* color: #9f9f9f; */
+  font-size: 14px;
+  line-height: 20px;
+  outline: 0;
+  padding: 10px 16px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.form-select::-ms-expand {
+  color: #f00;
+}
+
+.form-select::after {
+  content: "";
+  border-top: 0.3em solid #f00;
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  display: inline-block;
+  height: 0.4em;
+  position: absolute;
+  right: 0.75em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.4em;
+}
